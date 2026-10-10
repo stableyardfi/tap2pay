@@ -1,0 +1,25 @@
+{
+  "name": "tap2pay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SCPP: an open protocol for authorising a stablecoin payment with a tap",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @stableyard/scpp",
+    "typecheck": "npm run typecheck -w @stableyard/scpp",
+    "test": "vitest run",
+    "demo": "npm run build && node examples/demo/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

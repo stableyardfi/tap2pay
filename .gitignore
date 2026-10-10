@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# nothing here should ever hold configuration, but these never go up regardless
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.p8
+*.jks
+*.keystore
+secrets/
+examples/softcard/*.json
+
+.DS_Store
